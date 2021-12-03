@@ -1,0 +1,25 @@
+{% extends "bootstrap/base.html" %}
+
+
+{% block head %}
+{# Inject Bootswatch Slate theme from https://bootswatch.com/3/slate/bootstrap.min.css #}
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css' ) }}" />
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='custom.css') }}" />
+
+<script>
+
+   document.addEventListener("DOMContentLoaded", attachFileNameListener);
+
+   function attachFileNameListener(event) {
+      const fileInput = document.querySelector("#exampleInputFile");
+      fileInput.addEventListener("change", writeFilenameToDOM);
+   }
+
+   function writeFilenameToDOM() {
+      var filename = this.value.split("\\")[2];
+      const filenameElement = document.querySelector("#filename");
+      filenameElement.textContent = filename;
+   }
+
+</script>
+{% endblock %}

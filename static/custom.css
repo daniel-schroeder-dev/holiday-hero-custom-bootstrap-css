@@ -1,0 +1,47 @@
+/*
+*   Pulled from these Bootstrap classes: .btn-default, .btn
+*/
+.file-input-button {
+    background-image: linear-gradient(#484e55, #3a3f44 60%, #313539);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff484e55', endColorstr='#ff313539', GradientType=0);
+    background-repeat: no-repeat;
+    -webkit-filter: none;
+    filter: none;
+    border-color: rgba(0,0,0,0.6);
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 30%);
+    color: #ffffff;
+    background-color: #3a3f44;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    padding: 8px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser-generated button that says Choose File: no file chosen */
+input[type="file"] {
+    display: none;
+}
+
+#exampleInputFile {
+    color: white;
+}
+
+#filename-wrapper {
+    padding: 12px 0px;
+    font-size: 16px;
+}
